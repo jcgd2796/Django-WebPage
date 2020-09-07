@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 6</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+        <div class="flow-text container">Exercise 6</div>
+        <form action='./Ex6/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Choose the correct option.</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>He wasn't there when I arrived home,I think he ____ be shopping.</td>
+                        <td><select class="browser-default" name="select1">
+                                <option>must</option>
+                                <option>might</option>
+                                <option>mustn't</option>
+                                <option>should</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>You ____ cheat on the exam, it is forbidden!</td>
+                        <td><select class="browser-default" name="select2">
+                                <option>must</option>
+                                <option>might</option>
+                                <option>mustn't</option>
+                                <option>should</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>He ____ have done it when he had the chance.</td>
+                        <td><select class="browser-default" name="select3">
+                                <option>must</option>
+                                <option>might</option>
+                                <option>mustn't</option>
+                                <option>should</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>They ____ be rich, look at their cars!</td>
+                        <td><select class="browser-default" name="select4">
+                                <option>must</option>
+                                <option>might</option>
+                                <option>mustn't</option>
+                                <option>should</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>There was a sign in the gas station which said: "You ____ turn on your phone".</td>
+                        <td><select class="browser-default" name="select5">
+                                <option>must</option>
+                                <option>might</option>
+                                <option>mustn't</option>
+                                <option>should</option>
+                            </select></td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Correct the following sentences. One of them is correct (write . in its field).</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Correct</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diana has forgot her homework.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select6" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I don't want to come because I already saw that film.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select7" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cristina and Elena have just arrived home.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select8" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alex has been losing his watch.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select9" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pedro haven't been bungee jumping before.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select10" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Did you eaten anything since yesterday?</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select11" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Complete the sentences using present perfect simple or present
+                perfect continuous. Write the whole sentence.</p>
+                <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Prompts</th>
+                        <th>Sentence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Please can we stop and rest, we/walk/for hours.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select12" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eric is very excited, he/never/visit/Cyprus/before.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select13" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>you/see/Tom Cruise's new film yet?</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select14" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Where's the watch I lent you, what/have/you/do/with it?</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select15" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Your face is red, what/you/do?</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select16" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text">Complete the second sentence with a defining or a non-defining relative clause. Write the whole sentence, using commas if necessary, and write the pronoun in brackets if it can be omited.</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Relative</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>Miguel is very tall. He's good at basketball</p>
+                            <p>Miguel ____ is good at basketball.</td>
+                                <td>
+                                    <div class="input-field col s6 green lighten-2">
+                                        <input name="select17" type="text">
+                                    </div>
+                                </td>
+                    </tr>
+                    <tr>
+                        <td><p>Lionel Messi is a footballer. He scored the most goals in La Liga last year.</p>
+                            <p>Lionel Messi is the footballer ____ last year.</p></td>
+                            <td>
+                                <div class="input-field col s6 green lighten-2">
+                                    <input name="select18" type="text">
+                                </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td><p>Rafael Nadal comes from Majorca. He's won thirteen Grand Slam titles.</p>
+                            <p>Rafael Nadal ____ has won thirteen Grand Slam titles.</p></td>
+                            <td>
+                                <div class="input-field col s6 green lighten-2">
+                                    <input name="select19" type="text">
+                                </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td><p>The Thames is a river in London. The famous Oxford vs Cambridge boat race is held there.</p>
+                            <p>The Thames is the river in London ____ is held.</td>
+                                <td>
+                                    <div class="input-field col s6 green lighten-2">
+                                        <input name="select20" type="text">
+                                    </div>
+                                </td>
+                    </tr>
+                    <tr>
+                        <td><p>This is my tennis racket. I used it when I won the final.</p>
+                            <p>This is the tennis racket ____ won the final.</p></td>
+                            <td>
+                                <div class="input-field col s6 green lighten-2">
+                                    <input name="select21" type="text">
+                                </div>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input class="btn waves-effect waves-light green darken-3" type="submit" value="Correct" name="correct" />
+        </div>
+        </form>
+    </body>
+</html>

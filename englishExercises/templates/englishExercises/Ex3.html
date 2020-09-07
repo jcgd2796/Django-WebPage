@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+        <div class="flow-text container">Exercise 3</div>
+        <form action='./Ex3/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Write the numeric value of this times (HH:MM, 24 hours, for example 02:06 or 00:00)</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Twenty to eight</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select1" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Five past two</td>
+                        <td><div class="input-field col s6 green lighten-2">
+                                <input name="select2" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Midday</td>
+                        <td><div class="input-field col s6 green lighten-2">
+                                <input name="select3" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Quarter to ten</td>
+                        <td><div class="input-field col s6 green lighten-2">
+                                <input name="select4" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Midnight</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select5" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Choose the right option</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I ____ blue eyes</td>
+                        <td><select class="browser-default" name="select6">
+                                <option>has</option>
+                                <option>had</option>
+                                <option>have</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>____ he got the exams?</td>
+                        <td><select class="browser-default" name="select7">
+                                <option>has</option>
+                                <option>had</option>
+                                <option>have</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I ____ five kilometers yesterday</td>
+                        <td><select class="browser-default" name="select8">
+                                <option>walk</option>
+                                <option>walked</option>
+                                <option>wolkt</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I ____ at the club last night</td>
+                        <td><select class="browser-default" name="select9">
+                                <option>were</option>
+                                <option>was</option>
+                                <option>had</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I'm ____ study hard this year</td>
+                        <td><select class="browser-default" name="select10">
+                                <option>will</option>
+                                <option>going to</option>
+                                <option>have to</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I ____ be able to pass the exam</td>
+                        <td><select class="browser-default" name="select11">
+                                <option>was</option>
+                                <option>will</option>
+                                <option>have</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The train ____ at five past two</td>
+                        <td><select class="browser-default" name="select12">
+                                <option>have to leave</option>
+                                <option>leaves</option>
+                                <option>will leave</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I ____ study if I want to pass the test</td>
+                        <td><select class="browser-default" name="select13">
+                                <option>will</option>
+                                <option>Have to</option>
+                                <option>mustn't</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>You ____ smoke there (forbidden)</td>
+                        <td><select class="browser-default" name="select14">
+                                <option>won't</option>
+                                <option>Haven't to</option>
+                                <option>mustn't</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>He's ____ adopt a dog</td>
+                        <td><select class="browser-default" name="select15">
+                                <option>will</option>
+                                <option>have to</option>
+                                <option>going to</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text">Select the right translation to the following words</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Spanish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eyebrows</td>
+                        <td><select class="browser-default" name="select16">
+                                <option>Pestanas</option>
+                                <option>Cejas</option>
+                                <option>Lentillas</option>
+                                <option>Pupilas</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Jewel</td>
+                        <td><select class="browser-default" name="select17">
+                                <option>Joyeria</option>
+                                <option>Judio</option>
+                                <option>Joya</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Razor</td>
+                        <td><select class="browser-default" name="select18">
+                                <option>Afilado</option>
+                                <option>Cuchilla</option>
+                                <option>Cuchillo</option>
+                                <option>Navaja</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Silk</td>
+                        <td><select class="browser-default" name="select19">
+                                <option>Seda</option>
+                                <option>Enfermo</option>
+                                <option>Gusano</option>
+                                <option>Silo</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Handkerchief</td>
+                        <td><select class="browser-default" name="select20">
+                                <option>Cuaderno</option>
+                                <option>Panuelo</option>
+                                <option>Salvamanteles</option>
+                                <option>Manilla</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text"> Translate this text by yourself<br/>
+            EASY ANONYMITY: CURSE OF THE INTERNET<br/>
+Wanting your voice to be heard is an almost universal desire. For
+generations we had the village pub, the pamphlet, the letters page.
+Politicians, clerics, commentators, critics, technical experts aired their
+views more formally and widely, but we knew who said what. So, we judged
+them accordingly, whether as interesting thinkers, fools or malicious
+bastards. Then came the Internet and everyone could have a say with a
+chance that the world might agree. Unfortunately, it also became easier to
+hide from the safety of darkness, or to invent any number of imaginary
+enthusiasts to shower praise on your book or business. So, the Times report
+about TripAdvisor was unsurprising. This lucrative US website, where
+customers review hotels and restaurants worldwide and contribute to their
+rankings, has been found to have many fake reviews. Some suspicious
+companies offer to post five-star verdicts and some malicious negative
+reviews are being sold in order to damage rivals. One remedy should be to
+forbid anonymity: at least your name should be given to the host, who
+should be able to contact you. Easy anonymity for noisy opinions is the
+curse of the Internet age. Hiding your identity is not admirable, at least not
+if you're going to join arguments. Hate me if you like, but tell me who you
+are! Let's engage as humans, not robots! Once you join an argument rather 
+than asking a question, it is only decent to stand up.<br/>
+(EBAU Castilla y Leon, 2019)<br/>
+<input class="btn waves-effect waves-light green darken-3" type="submit" value="Correct" name="correct" />
+        </div>
+        </form>
+    </body>
+</html>

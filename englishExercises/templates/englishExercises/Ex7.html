@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 7</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+        <div class="flow-text container">Exercise 7</div>
+        <form action='./Ex7/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Write passive sentences using the prompts. Omit the agent if not necessary.</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Prompts</th>
+                        <th>Sentence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shoplifter/arrest/someone/this morning.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select1" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shoppers/offer/discounts/someone/next week.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select2" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The ring/steal/someone/from/jewellers/last week.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select3" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The new shopping centre/open/major/tomorrow?</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select4" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>This shirt/wear/David Beckham/next season?.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select5" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Choose the right option. Choose the pronoun in brackets if it 
+                can be ommited, and choose 'that' if it's the only correct choice.</p>
+                <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I did a ten-kilometre run yesterday ____ was tiring.</td>
+                        <td><select class="browser-default" name="select6">
+                                <option>that</option>
+                                <option>what</option>
+                                <option>who</option>
+                                <option>(that)</option>
+                                <option>(what)</option>
+                                <option>(who)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Kate is the girl ____ we were talking about yesterday.</td>
+                        <td><select class="browser-default"name="select7">
+                                <option>that</option>
+                                <option>what</option>
+                                <option>who</option>
+                                <option>(that)</option>
+                                <option>(what)</option>
+                                <option>(who)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Let me see ____ you bought at the shops today.</td>
+                        <td><select class="browser-default"name="select8">
+                                <option>that</option>
+                                <option>what</option>
+                                <option>who</option>
+                                <option>(that)</option>
+                                <option>(what)</option>
+                                <option>(who)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>He's broken his ankle, ____ is very painful.</td>
+                        <td><select class="browser-default"name="select9">
+                                <option>that</option>
+                                <option>what</option>
+                                <option>who</option>
+                                <option>(that)</option>
+                                <option>(what)</option>
+                                <option>(who)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Do you remember ____ the teacher told you?</td>
+                        <td><select class="browser-default"name="select10">
+                                <option>that</option>
+                                <option>what</option>
+                                <option>who</option>
+                                <option>(that)</option>
+                                <option>(what)</option>
+                                <option>(who)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Please, bring me the book ____ is over the table.</td>
+                        <td><select class="browser-default"name="select11">
+                                <option>that</option>
+                                <option>what</option>
+                                <option>who</option>
+                                <option>(that)</option>
+                                <option>(what)</option>
+                                <option>(who)</option>
+                            </select></td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Rewrite the sentences using reported speech (x said that ...).</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Reported speech</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lucy said: 'I spoke to my friend on Skype yesterday'.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select12" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>'I'll take a photo of you', said Max to me.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select13" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>'You must tell me if you change your email address', said Maria's mother.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select14" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>'You've been online for too long, Peter',said Dad.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select15" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>'We'd never used this website before', they said.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select16" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stepahie said: 'I'm going to look it up on the Internet now to find out more'.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select17" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text">Correct the errors in the next sentences. One of them is correct (write . in its box).</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Correct</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>They had a photo taking yesterday.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select18" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>I had my leg been bitten by a dog..</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select19" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Theo always has his hair cut by the same hairdresser.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select20" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Sandra got her purse stolen in the city centre.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select21" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>The shoppers had their bags pack.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select22" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input class="btn waves-effect waves-light green darken-3" type="submit" value="Correct" name="correct" />
+        </div>
+        </form>
+    </body>
+</html>

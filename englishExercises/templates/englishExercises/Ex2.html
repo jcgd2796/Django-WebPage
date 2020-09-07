@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+        <div class="flow-text container">Exercise 2</div>
+        <form action='./Ex2/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Complete with the correct words</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Phrase</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>This is ____ house</td>
+                        <td><select class="browser-default" name="select1">
+                                <option>mine</option>
+                                <option>my</option>
+                                <option>self</option>
+                                <option>yours</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>____ bed is on this room</td>
+                        <td><select class="browser-default" name="select2">
+                                <option>self</option>
+                                <option>his</option>
+                                <option>mine</option>
+                                <option>yours</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>That is ____</td>
+                        <td><select class="browser-default" name="select3">
+                                <option>your</option>
+                                <option>mine</option>
+                                <option>her</option>
+                                <option>self</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>This is ____ submarine</td>
+                        <td><select class="browser-default" name="select4">
+                                <option>mine</option>
+                                <option>yours</option>
+                                <option>Bodgan's</option>
+                                <option>hers</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Is that ____ book?</td>
+                        <td><select class="browser-default" name="select5">
+                                <option>mine</option>
+                                <option>their</option>
+                                <option>yours</option>
+                                <option>self</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The book is ____ the table</td>
+                        <td><select class="browser-default" name="select6">
+                                <option>in</option>
+                                <option>on</option>
+                                <option>over</option>
+                                <option>at</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>He is ____ his sister</td>
+                        <td><select class="browser-default" name="select7">
+                                <option>at</option>
+                                <option>on</option>
+                                <option>in</option>
+                                <option>with</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I have my classes ____ the morning</td>
+                        <td><select class="browser-default" name="select8">
+                                <option>in</option>
+                                <option>at</option>
+                                <option>when</option>
+                                <option>while</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The paper is ____ my pocket</td>
+                        <td><select class="browser-default" name="select9">
+                                <option>on</option>
+                                <option>in</option>
+                                <option>at</option>
+                                <option>over</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Cut the red wire ____ the red and yellow ones </td>
+                        <td><select class="browser-default" name="select10">
+                                <option>at</option>
+                                <option>where</option>
+                                <option>between</option>
+                                <option>on</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text">Choose the correct translation</p>
+                        <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Spanish</th>
+                        <th>Translation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Esto es una pieza del reloj (de pared)</td>
+                        <td><select class="browser-default" name="select11">
+                                <option>This is a plate of the watch</option>
+                                <option>This is a piece of the clock</option>
+                                <option>This is one watch's piece</option>
+                                <option>This is a watch's piece</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>He is nor handsome neither ugly</td>
+                        <td><select class="browser-default" name="select12">
+                                <option>No es bueno ni feo</option>
+                                <option>No es hermoso ni feo</option>
+                                <option>No es bueno ni malo</option>
+                                <option>Es bueno pero malo</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>This is your story</td>
+                        <td><select class="browser-default" name="select13">
+                                <option>Esta es mi historia</option>
+                                <option>Esta es tu historia</option>
+                                <option>Es esta mi historia?</option>
+                                <option>Es esta tu historia?</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The tiger's paws are white</td>
+                        <td><select class="browser-default" name="select14">
+                                <option>Los ojos del tigre son blancos</option>
+                                <option>La cola del tigre es blanca</option>
+                                <option>Las unas del tigre son blancas</option>
+                                <option>Las zarpas del tigre son blancas</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Is this phone yours?</td>
+                        <td><select class="browser-default" name="select15">
+                                <option>Este es tu telefono</option>
+                                <option>Es este tu telefono?</option>
+                                <option>Este no es tu telefono</option>
+                                <option>No es este tu telefono?</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text">Select the right translation to the following words</p>
+                <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Spanish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kindness</td>
+                        <td><select class="browser-default" name="select16">
+                                <option>Reinado</option>
+                                <option>Amabilidad</option>
+                                <option>Estabilidad</option>
+                                <option>Reino</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Proud</td>
+                        <td><select class="browser-default" name="select17">
+                                <option>Pronto</option>
+                                <option>Orgullo</option>
+                                <option>Prisa</option>
+                                <option>Perezoso</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Daughter</td>
+                        <td><select class="browser-default" name="select18">
+                                <option>Hija</option>
+                                <option>Hijo</option>
+                                <option>Primo</option>
+                                <option>Mujer</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Relative</td>
+                        <td><select class="browser-default" name="select19">
+                                <option>Relativo</option>
+                                <option>Pariente</option>
+                                <option>Relacion</option>
+                                <option>Relato</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Tablecloth</td>
+                        <td><select class="browser-default" name="select20">
+                                <option>Encimera</option>
+                                <option>Mantel</option>
+                                <option>Bandeja</option>
+                                <option>Servilleta</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text"> Translate this text by yourself<br/>
+            MEET THE MASTER CARVER WHO TURNS PUMPKINS INTO PORTRAITS<br/>
+Carving a basic jack-o-lantern in 45 minutes? Sure, no problem, unless you're talking about a
+portrait of Lady Gaga, Beyonce or someone's pet poodle. Now that's no easy feat, unless you're Brent
+Pumpkins, master pumpkin carver extraordinaire who carves celebrities' mugs as well as faces on the spot
+at New York's High Line Hotel.<br/>
+NEWSWEEK: Why pumpkins? And how did you get started?<br/>
+BRENT PUMPKINS: Well, it did start out as a hobby. I grew up in Ohio and I am a musical
+theatre performer first. And I was traveling with Chicago, the musical. We had about a six-week layoff
+before our next gig and it was during the Halloween season, so I'm kind of crazy and I had a lot of creative
+energy to burn. I started with Elsa from Frozen. I rounded it out doing more Frozen characters, because,
+this being five years ago, I knew people like them. And the movie was popular still.<br/>
+I kept posting my work and it was something to keep me motivated and interested in creativity
+during my layoff and I got kind of obsessed. But a real basic version of Elsa, the moms and aunts and
+grandmas kind of came out of the woodwork saying like, "Do you think I could get one of these from my
+daughter or my niece?" And friend, Brent Pumpkins was awakened. And by the end of that first season, I
+was carving Lady Gaga as the Countess from Horror Story<br/>
+I did realize I had a knack for it. The first season I was on the local news in Cleveland. So it was kind
+of like, "There's something here." People love pumpkins. And it is such a niche form of art once a year that
+I can still do my career as well. (Fragment adapted from NEWSWEEK).<br/>
+(EBAU Castilla y Leon, 2020)<br/>
+        <input class="btn waves-effect waves-light green darken-3" type="submit" value="Correct" name="correct" />
+        </div>
+        </form>
+    </body>
+</html>

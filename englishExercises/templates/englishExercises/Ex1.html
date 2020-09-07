@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 1</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Compiled and minified CSS -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+       	<div class="flow-text container"><h5>Exercise 1</h5></div>
+        <form action='./Ex1/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Complete with the correct words</p>
+            <table class="stripped green">
+                <thead>
+                    <tr>
+                        <th>Phrase</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>She ______ beautiful</td>
+                        <td>
+				<select class="browser-default" name="select1">
+        	        	                <option>are</option>
+	                        	        <option>is</option>
+                                		<option>were</option>
+                        	       	 	<option>am</option>
+                	               		<option>it</option>
+        	               </select>
+			</td>
+                    </tr>
+                    <tr>
+                        <td>I _____ French</td>
+                        <td><select class="browser-default" name="select2">
+                                <option>are</option>
+                                <option>is</option>
+                                <option>were</option>
+                                <option>am</option>
+                                <option>it</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The ink _____ green</td>
+                        <td><select class="browser-default" name="select3">
+                                <option>are</option>
+                                <option>is</option>
+                                <option>were</option>
+                                <option>am</option>
+                                <option>it</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>We _____ in Spain</td>
+                        <td><select class="browser-default" name="select4">
+                                <option>are</option>
+                                <option>is</option>
+                                <option>was</option>
+                                <option>am</option>
+                                <option>it</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>_____ you a teacher?</td>
+                        <td><select class="browser-default" name="select5">
+                                <option>are</option>
+                                <option>is</option>
+                                <option>were</option>
+                                <option>am</option>
+                                <option>it</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The boy _____ in school</td>
+                        <td><select class="browser-default" name="select6">
+                                <option>are</option>
+                                <option>is</option>
+                                <option>were</option>
+                                <option>am</option>
+                                <option>it</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>There _____ a book in the house</td>
+                        <td><select class="browser-default" name="select7">
+                                <option>are</option>
+                                <option>is</option>
+                                <option>were</option>
+                                <option>am</option>
+                                <option>it</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The girls are at _____ school</td>
+                        <td><select class="browser-default" name="select8">
+                                <option>the</option>
+                                <option>&lt;nothing&gt;</option>
+                                <option>in</option>
+                                <option>on</option>
+                                <option>over</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Who _____ you?</td>
+                        <td><select class="browser-default" name="select9">
+                                <option>are</option>
+                                <option>is</option>
+                                <option>were</option>
+                                <option>am</option>
+                                <option>it</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>_____ a book in the school?</td>
+                        <td><select class="browser-default" name="select10">
+                                <option>are there</option>
+                                <option>is there</option>
+                                <option>were there</option>
+                                <option>it are</option>
+                                <option>it is</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container s4 centered">
+            <p class="flow-text">Choose the correct translation</p>
+                <table class="stripped green">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Translation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I am not here</td>
+                        <td><select class="browser-default" name="select11">
+                                <option>No esta aqui</option>
+                                <option>Estoy aqui?</option>
+                                <option>No estoy aqui</option>
+                                <option>Esta aqui</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Are they in hospital?</td>
+                        <td><select class="browser-default" name="select12">
+                                <option>Estan en el hospital?</option>
+                                <option>Estais en el hospital?</option>
+                                <option>Estaban en el hospital?</option>
+                                <option>No estan en el hospital</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Where are they?</td>
+                        <td><select class="browser-default" name="select13">
+                                <option>Quienes son?</option>
+                                <option>Donde estamos?</option>
+                                <option>Quien eres?</option>
+                                <option>Donde estan?</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Is that your book?</td>
+                        <td><select class="browser-default" name="select14">
+                                <option>Esta aqui tu libro?</option>
+                                <option>Es ese tu libro?</option>
+                                <option>Es este tu libro?</option>
+                                <option>Donde esta tu libro?</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>You are not allowed to enter that place</td>
+                        <td><select class="browser-default" name="select15">
+                                <option>No se te permite entrar aqui</option>
+                                <option>No se te permite entrar alli</option>
+                                <option>No puedes alojarte aqui</option>
+                                <option>No puedes alojarte alli</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container centered s4">
+            <p class="flow-text">Select the right translation to the following words</p>
+                <table class="green" border="2" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Spanish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Behind</td>
+                        <td><select class="browser-default" name="select16">
+                                <option>Sobre</option>
+                                <option>Detras de</option>
+                                <option>Dentro de</option>
+                                <option>Debajo de</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Male</td>
+                        <td><select class="browser-default" name="select17">
+                                <option>Hembra</option>
+                                <option>Macho</option>
+                                <option>Mate</option>
+                                <option>Malla</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Widower</td>
+                        <td><select class="browser-default" name="select18">
+                                <option>Viuda</option>
+                                <option>Viudo</option>
+                                <option>Ventanal</option>
+                                <option>Ventana</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Niece</td>
+                        <td><select class="browser-default" name="select19">
+                                <option>Primo</option>
+                                <option>Sobrina</option>
+                                <option>Tio</option>
+                                <option>Sobrino</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Nephew</td>
+                        <td><select class="browser-default" name="select20">
+                                <option>Primo</option>
+                                <option>Sobrina</option>
+                                <option>Tio</option>
+                                <option>Sobrino</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <p class="flow-text"> Translate this text by yourself</p>
+            <p class="flow-text">FACEBOOK SAYS IT'S REMOVING MORE HATE SPEECH THAN EVER BEFORE</p>
+<p class="flow-text">On Nov. 13, Facebook announced with great fanfare that it was taking down substantially more
+posts containing hate speech from its platform than ever before. Facebook removed more than seven million
+instances of hate speech in the third quarter of 2019, the company claimed, an increase of 59% against the
+previous quarter. More and more of that hate speech (80%) is now being detected not by humans, they
+ added, but automatically, by artificial intelligence. The new statistics, however, conceal a structural
+problem Facebook is yet to overcome: not all hate speech is treated equally.</p>
+<p class="flow-text">The algorithms Facebook currently uses to remove hate speech only work in certain languages.
+That means it has become easier for Facebook to contain the spread of racial or religious hatred online in
+the primarily developed countries and communities where global languages like English, Spanish and
+ Mandarin dominate. But in the rest of the world, it's as difficult as ever.</p>
+<p class="flow-text">Facebook tells it has functional hate speech detection algorithms (or 'classifiers', as it calls them
+internally) in more than 40 languages worldwide. In the rest of the world's languages, Facebook relies on
+its own users and human moderators to police hate speech. Unlike the algorithms that Facebook says now
+automatically detect 80% of hateful posts without needing a user to have reported them first, these human
+moderators do not regularly scan the site for hate speech themselves. Instead, their job is to decide whether
+posts that users have already reported should be removed.</p>
+<p class="flow-text">
+Languages spoken by minorities are the hardest-hit by this disparity. It means that racial slurs,
+incitements to violence and targeted abuse can spread faster in the developing world than they do at present
+in the U.S., Europe and elsewhere. (Fragment adapted from TIME).</p>
+<p class="flow-text">(EBAU Castilla y Leon, 2020)</p>
+	<input class="btn waves-effect waves-light green darken-3" type="submit" name="correct" value="Correct"/>
+        </div>
+        </form>
+    </body>
+</html>

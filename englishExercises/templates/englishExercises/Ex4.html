@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 4</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+        <div class="flow-text container">Exercise 4</div>
+        <form action='./Ex4/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Choose the right word</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I ____ be with you next week</td>
+                        <td><select class="browser-default" name="select1">
+                                <option>have</option>
+                                <option>will</option>
+                                <option>did</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I ____ lend you my phone</td>
+                        <td><select class="browser-default" name="select2">
+                                <option>won't</option>
+                                <option>have</option>
+                                <option>do</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I ____ leaving soon</td>
+                        <td><select class="browser-default" name="select3">
+                                <option>am</option>
+                                <option>had</option>
+                                <option>am going to</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I ____ been here before</td>
+                        <td><select class="browser-default" name="select4">
+                                <option>will</option>
+                                <option>have</option>
+                                <option>am going to</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>____ you bought bread?</td>
+                        <td><select class="browser-default" name="select5">
+                                <option>did</option>
+                                <option>will</option>
+                                <option>have</option>
+                            </select></td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Change to passive (ommit Spanish characters and use contracted forms such as don't or 'll)</p>
+            <table class="atripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Active</th>
+                        <th>Passive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I didn't unplug the fan</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select6" type="text" size="20">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>They say he is rich</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select7" type="text" size="20">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>She has taken the car</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select8" type="text" size="20">
+                            </div>
+                        </td>                    
+                    </tr>
+                    <tr>
+                        <td>Did he allow me to dye my hair?</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select9" type="text" size="20">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I will take the train tomorrow</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select10" type="text" size="20">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Correct this sentences</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Corrected sentence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Took care of my friend, I helped him</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select11" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I saw him ran away</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select12" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Have finished his homework,he played GTA V</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select13" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>While you was out, I painted this room</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select14" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Having spoke to her boss, she went home</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select15" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text">Select the right translation to the following words</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Spanish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Napkin</td>
+                        <td><select class="browser-default" name="select16">
+                                <option>Siesta</option>
+                                <option>Servilleta</option>
+                                <option>Abrigo</option>
+                                <option>Cordero</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Curtain</td>
+                        <td><select class="browser-default" name="select17">
+                                <option>Escenario</option>
+                                <option>Telon</option>
+                                <option>Curtidor</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>To be worth</td>
+                        <td><select class="browser-default" name="select18">
+                                <option>Ser trabajador</option>
+                                <option>Valer la pena</option>
+                                <option>Ser fuerte</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Performer</td>
+                        <td><select class="browser-default" name="select19">
+                                <option>Trabajador</option>
+                                <option>Perfeccionista</option>
+                                <option>Actor</option>
+                                <option>Perforador</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Themselves</td>
+                        <td><select class="browser-default" name="select20">
+                                <option>De ellos</option>
+                                <option>Entre ellos</option>
+                                <option>Para ellos</option>
+                                <option>Ellos</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text"> Translate this text by yourself<br/>
+            J.R.R. TOLKIEN'S 'LORD OF THE RINGS'<br/>
+When Christopher and Michael Tolkien were young, their father would tell
+them tales of dwarves, elves, and hobbits. But the stories weren't read from a
+book, they came from J.R.R. Tolkien's imagination and only his children
+were able to enter into the world of Middle Earth. It wasn't until Christopher
+ critiqued his father's bad memory about details of the story that his father took
+a pen to paper and began recording the well-loved saga of The Lord of the
+Rings that we know today.
+In the introduction to the 50th anniversary printing of The Hobbit,
+Christopher wrote: 'I (then between four and five years old) was greatly
+ concerned with consistency as the story unfolded, and on one occasion I
+interrupted: 'Last time, you said Bilbo's front door was blue, and you said
+Thorin had a gold tassel on his hood, but you've just said that Bilbo's front
+door was green, and the tassel on Thorin's hood was silver'; at which point
+my father muttered 'Damn the boy', and then strode across the room to his
+ desk to make a note.
+As his sons grew up, they also helped him type up the stories. They even
+helped in the editing process. Tolkien paid his son, Christopher, two pennies
+for every mistake he found when reading through the manuscript.
+Through his incredible relationship with his children, Tolkien found help
+and inspiration for the creation of one of the greatest literary works of the 20th
+century.<br/>
+
+(EBAU Castilla y Leon, 2019)</p>
+<input class="btn waves-effect waves-light green darken-3" type="submit" value="Correct" name="correct" />
+        </div>
+        </form>
+    </body>
+</html>

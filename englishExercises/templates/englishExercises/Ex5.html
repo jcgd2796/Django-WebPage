@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 5</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+        <div class="flow-text container">Exercise 5</div>
+        <form action='./Ex5/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Write the correct form of the verb between brackets, starting with capital letter</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Verb</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>They are (come) on Tuesday.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select1" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>it (snow) very much yesterday.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select2" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>You (can) have helped.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select3" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>You (tell) me the problem was solved.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select4" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>He (forget) to bring the cards, so now we can't play the game.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select5" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Did they (spill) the milk?</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select6" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I had already (do) it when you called.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select7" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>You might have (forget) that.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select8" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The wind (blow) hard last Monday.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select9" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>He wants to (become) a mechanic.</td>
+                        <td>
+                            <div class="input-field col s6 green lighten-3">
+                                <input name="select10" type="text" size="30">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Choose the right option</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>He is ____ than me</td>
+                        <td><select class="browser-default" name="select11">
+                                <option>more tall</option>
+                                <option>taller</option>
+                                <option>tallest</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>She is the _____ of the class.</td>
+                        <td><select class="browser-default" name="select12">
+                                <option>clever</option>
+                                <option>cleverest</option>
+                                <option>most clever</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>I am ____ you</td>
+                        <td><select class="browser-default" name="select13">
+                                <option>older</option>
+                                <option>as old as</option>
+                                <option>oldest than</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>This is the ____thing you've done</td>
+                        <td><select class="browser-default" name="select14">
+                                <option>terriblest</option>
+                                <option>most terrible</option>
+                                <option>terribler</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>He's _____as you (negative)</td>
+                        <td><select class="browser-default" name="select15">
+                                <option>not as rich</option>
+                                <option>not so rich</option>
+                                <option>less rich</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="flow-text">Select the right translation to the following words</p>
+            <table class="stripped green" border="1" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Spanish</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Crowded</td>
+                        <td><select class="browser-default" name="select16">
+                                <option>Enmaranado</option>
+                                <option>Atestado</option>
+                                <option>Vacio</option>
+                                <option>Atravesado</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Stream</td>
+                        <td><select class="browser-default" name="select17">
+                                <option>Estado</option>
+                                <option>Corriente</option>
+                                <option>Video</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Tin</td>
+                        <td><select class="browser-default" name="select18">
+                                <option>Diez</option>
+                                <option>Lata</option>
+                                <option>Escarabajo</option>
+                                <option>Pomo</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Overseas</td>
+                        <td><select class="browser-default" name="select19">
+                                <option>Marina</option>
+                                <option>Costa</option>
+                                <option>Ultramar</option>
+                                <option>Fondo marino</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Raw</td>
+                        <td><select class="browser-default" name="select20">
+                                <option>Cocinado</option>
+                                <option>Asado</option>
+                                <option>Crudo</option>
+                                <option>Estofado</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input class="btn waves-effect waves-light green darken-3" type="submit" value="Correct" name="correct" />
+            </div>
+        </form>
+    </body>
+</html>

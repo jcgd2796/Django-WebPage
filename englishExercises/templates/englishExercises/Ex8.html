@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 8</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-4">
+        <div class="flow-text container">Exercise 8</div>
+        <form action='./Ex8/correct' method="POST">
+        {%csrf_token %}
+        <div class="container s4 centered">
+            <p class="flow-text">Choose the correct options.</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>Tony is playing tennis between 11 a.m. and 12 p.m.</p>
+                            <p>At 11:30 a.m. he ____ tennis.</p></td>
+                        <td><select class="browser-default green lighten-2" name="select1">
+                                <option>will have played</option>
+                                <option>will be playing</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>I'm going to Portugal on Tuesday morning.</p>
+                            <p>By Tuesday evening, I ____ to Portugal.</p></td>
+                        <td><select class="browser-default green lighten-2" name="select2">
+                                <option>will have gone</option>
+                                <option>will be going</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>I'm trying to save for my holiday but I keep spending all the money.</p>
+                            <p>By the time I go on holiday, I ____ all my money.</p></td>
+                        <td><select class="browser-default green lighten-2" name="select3">
+                                <option>will have spent</option>
+                                <option>will be spending</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>I joined the company last June.</p>
+                            <p>By next June, I ____ here for a year.</p></td>
+                        <td><select class="browser-default green lighten-2" name="select4">
+                                <option>will have worked</option>
+                                <option>will be working</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Jane leaves the house at 8 a.m, and it takes her half an hour to cycle to work.</p>
+                            <p>At 8:10 a.m., Jane ____ to work.</p></td>
+                        <td><select class="browser-default green lighten-2" name="select5">
+                                <option>will have cycled</option>
+                                <option>will be cycling</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Choose the right option.</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentence</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A tip ____ to the waiter.</td>
+                        <td><select class="browser-default green lighten-2" name="select6">
+                                <option>were given</option>
+                                <option>was given</option>
+                                <option>gave</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The ball ____ to Ramirez.</td>
+                        <td><select class="browser-default green lighten-2" name="select7">
+                                <option>were passed</option>
+                                <option>was passed</option>
+                                <option>pass</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Mario ____ three texts.</td>
+                        <td><select class="browser-default green lighten-2" name="select8">
+                                <option>were sended</option>
+                                <option>was sent</option>
+                                <option>sended</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The bill ____ to us.</td>
+                        <td><select class="browser-default green lighten-2" name="select9">
+                                <option>were brought</option>
+                                <option>was brought</option>
+                                <option>brought</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>French ____ to them</td>
+                        <td><select class="browser-default green lighten-2" name="select10">
+                                <option>were taught</option>
+                                <option>was taught</option>
+                                <option>are taught</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>The children ____ the truth</td>
+                        <td><select class="browser-default green lighten-2" name="select11">
+                                <option>were told</option>
+                                <option>was told</option>
+                                <option>telled</option>
+                            </select></td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="flow-text">Correct the second sentence error. One sentence is correct (write . in its box)</p>
+            <table class="stripped green" cellspacing="2">
+                <thead>
+                    <tr>
+                        <th>Sentences</th>
+                        <th>correct</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>My aunt said, 'I'll check my messages before we leave'.</p>
+                        <p>My aunt said that she would check my messages before we left'.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select12" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Tom said, 'I'm going to the cinema tonight'.</p>
+                        <p>Tom said that he had been going to the cinema that night.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select13" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>'We must wait for your brother to arrive', said Mum.</p>
+                        <p>Mum said that we have to wait for my brother to arrive.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select14" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Michael said, 'I saw your brother yesterday'.</p>
+                        <p>Michael said that he had seen my brother yesterday.</p></td>
+                        <td>
+                            <div class="input-field col s6 green lighten-2">
+                                <input name="select15" type="text">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input class="btn waves-effect waves-light green darken-3" type="submit" value="Correct" name="correct" />
+        </div>
+        </form>
+    </body>
+</html>

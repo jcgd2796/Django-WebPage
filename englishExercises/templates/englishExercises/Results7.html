@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Results</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class="green lighten-3">
+        <div class="container">
+			<p class="flow-text">You've earned {{points}}/22 points</p>
+			<div class="row">
+				<div class="col s12">
+					<div class="card green">
+						<div class="card-content white-text">
+							<span class="card-title">You chose:</span>
+							<div class="card-content white-text">
+								<p class="flow-text">1.{{c1}}, 2.{{c2}}, 3.{{c3}}, 4.{{c4}}, 5.{{c5}}<br/>
+									6.{{c6}}, 7.{{c7}}, 8.{{c8}}, 9.{{c9}}, 10.{{c10}}<br/>
+									11.{{c11}}, 12.{{c12}}, 13.{{c13}}, 14.{{c14}}, 15.{{c15}}<br/>
+                                    16.{{c16}}, 17.{{c17}}, 18.{{c18}}, 19.{{c19}}, 20.{{c20}}<br/>
+                                    21.{{c21}}, 22.{{c22}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			   </div>
+
+			   <div class="row">
+				<div class="col s12">
+					<div class="card green">
+						<div class="card-content white-text">
+							<span class="card-title">The solutions are:</span>
+							<div class="card-content white-text">
+								<p class="flow-text">1.{{s1}}, 2.{{s2}}, 3.{{s3}}, 4.{{s4}}, 5.{{s5}}<br/>
+									6.{{s6}}, 7.{{s7}}, 8.{{s8}}, 9.{{s9}}, 10.{{s10}}<br/>
+									11.{{s11}}, 12.{{s12}}, 13.{{s13}}, 14.{{s14}}, 15.{{s15}}<br/>
+                                    16.{{s16}}, 17.{{s17}}, 18.{{s18}}, 19.{{s19}}, 20.{{s20}}<br/>
+                                    21.{{s21}}, 22.{{c22}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			   </div>
+		
+			   <div class="row">
+				<div class="col s12">
+					<div class="card green">
+						<div class="card-content white-text">
+							<span class="card-title">Error report:</span>
+							<div class="card-content white-text">
+								<p class="flow-text">{{errors}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			   </div>
+		
+		<a class="waves-effect waves-light btn-large green darken-2" href='/englishExercises/Ex7' >Try again</a>
+            <a class="waves-effect waves-light btn-large green darken-2" href='/englishExercises' >Return to main page</a> 
+        </div>
+    </body>
+</html>
